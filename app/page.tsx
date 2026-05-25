@@ -10,12 +10,12 @@ import Separator from "@/app/components/Separator"
 import SkillCard from "./components/SkillCard"
 
 export default function Home() {
-    const [projects, setProjects] = useState([])
+    const [skills, setSkills] = useState([])
     useEffect(() => {
         async function fetchData() {
-            const response = await fetch("/api/projects")
+            const response = await fetch("/api/skills")
             const result = await response.json()
-            setProjects(result)
+            setSkills(result)
         }
 
         fetchData()
@@ -172,8 +172,8 @@ export default function Home() {
                             "xl:w-7/8 xl2:grid-cols-4 -z-10 mt-5 grid w-full grid-flow-dense grid-cols-1 gap-2 p-2 text-center md:w-3/4 lg:w-5/6 lg:grid-cols-2 xl:grid-cols-3 xl:p-0 2xl:w-4/6"
                         }
                     >
-                        {projects.map((project: never) => {
-                            return <SkillCard data={project}></SkillCard>
+                        {skills.map((project: never) => {
+                            return <SkillCard key={project.data.name} data={project}></SkillCard>
                         })}
                     </div>
                 </div>

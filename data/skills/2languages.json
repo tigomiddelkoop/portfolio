@@ -26,9 +26,9 @@
             "confidence": 10
         },
         {
-            "name": "Rust",
-            "date": "2020-06-01",
-            "confidence": 10
+            "name": "Go",
+            "date": "2025-06-01",
+            "confidence": 40
         }
     ]
 }

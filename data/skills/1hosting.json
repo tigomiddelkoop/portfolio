@@ -6,7 +6,7 @@
             "name": "Kubernetes",
             "extras": ["Container Orchestration"],
             "date": "2020-12-01",
-            "confidence": 70
+            "confidence": 80
         },
         {
           "name": "Google Cloud Run",
@@ -14,17 +14,17 @@
             "Knative hosting"
           ],
           "date": "2024-01-01",
-          "confidence": 40
+          "confidence": 80
         },
         {
-            "name": "Docker",
+            "name": "Docker & Docker Compose",
             "extras": ["Containerized Applications"],
             "date": "2020-12-01",
-            "confidence": 60
+            "confidence": 80
         },
         {
-            "name": "Terraform",
-            "extras": ["My infra as code!"],
+            "name": "OpenTofu / Terraform",
+            "extras": ["or Terraform"],
             "date": "2022-03-01",
             "confidence": 75
         }
