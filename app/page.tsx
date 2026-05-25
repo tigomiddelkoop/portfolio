@@ -115,12 +115,12 @@ export default function Home() {
 
                 <div
                     className={
-                        "absolute bottom-5 -z-10 flex animate-bounce flex-col text-purple-300 dark:text-slate-300"
+                        "absolute bottom-5 items-center -z-10 flex animate-bounce flex-col text-purple-300 dark:text-slate-300"
                     }
                 >
-                    <p className={"mb-2 text-xs font-bold"}>
-                        Skills, Projects & Socials
-                    </p>
+                    {/*<p className={"mb-2 text-xs font-bold"}>*/}
+                    {/*    Skills, Projects & Socials*/}
+                    {/*</p>*/}
                     <FontAwesomeIcon height={16} icon={faAnglesDown} />
                 </div>
 
