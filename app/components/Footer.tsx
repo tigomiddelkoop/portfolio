@@ -22,7 +22,7 @@ export default function Footer(): React.JSX.Element {
             <Separator classNames={"mt-2"} />
             <div
                 className={
-                    "items-center justify-center border-gray-100 p-4 text-center align-bottom text-white backdrop-blur-3xl dark:border-gray-500"
+                    "items-center border-gray-100 p-4 text-center align-bottom text-white backdrop-blur-3xl dark:border-gray-500"
                 }
             >
                 <h1
@@ -35,7 +35,7 @@ export default function Footer(): React.JSX.Element {
 
                 <div
                     className={
-                        "flex flex-col justify-center text-center lg:flex-row"
+                        "flex justify-center"
                     }
                 >
                     <div className={styles.categoryContainer}>
