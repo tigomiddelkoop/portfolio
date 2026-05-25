@@ -187,7 +187,6 @@ export default function Home() {
                         }
                     >
                         {skills.map((skill: Skill) => {
-                            console.log(skill)
                             return (
                                 <SkillCard
                                     key={skill.name}
