@@ -9,6 +9,20 @@ import React, { Fragment, useEffect, useState } from "react"
 import Separator from "@/app/components/Separator"
 import SkillCard from "./components/SkillCard"
 
+interface Skill {
+        name: string
+        description?: string
+        image?: string
+        entries: [
+            {
+                name: string
+                extras: Array<string>
+                date: string
+                confidence: number
+            },
+        ]
+}
+
 export default function Home() {
     const [skills, setSkills] = useState([])
     useEffect(() => {
@@ -115,7 +129,7 @@ export default function Home() {
 
                 <div
                     className={
-                        "absolute bottom-5 items-center -z-10 flex animate-bounce flex-col text-purple-300 dark:text-slate-300"
+                        "absolute bottom-5 -z-10 flex animate-bounce flex-col items-center text-purple-300 dark:text-slate-300"
                     }
                 >
                     {/*<p className={"mb-2 text-xs font-bold"}>*/}
@@ -136,7 +150,7 @@ export default function Home() {
                             About me
                         </h1>
                     </div>
-                    <p className={"font-normal mt-2"}>
+                    <p className={"mt-2 font-normal"}>
                         Hi! I'm, as you have probably seen up top, Tigo. I
                         specialise in building Clouds using mostly Kubernetes. I
                         also love doing stuff with bare metal servers.
@@ -172,8 +186,14 @@ export default function Home() {
                             "xl:w-7/8 xl2:grid-cols-4 -z-10 mt-5 grid w-full grid-flow-dense grid-cols-1 gap-2 p-2 text-center md:w-3/4 lg:w-5/6 lg:grid-cols-2 xl:grid-cols-3 xl:p-0 2xl:w-4/6"
                         }
                     >
-                        {skills.map((project: never) => {
-                            return <SkillCard key={project.data.name} data={project}></SkillCard>
+                        {skills.map((skill: Skill) => {
+                            console.log(skill)
+                            return (
+                                <SkillCard
+                                    key={skill.name}
+                                    data={skill}
+                                ></SkillCard>
+                            )
                         })}
                     </div>
                 </div>

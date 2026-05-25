@@ -35,7 +35,7 @@ export default function SkillCard(props: Props): React.JSX.Element {
             <div className={"flex flex-col"}>
                 {props.data.entries.map((skill) => {
                     return (
-                        <div>
+                        <div key={skill.name}>
                             <div
                                 className={
                                     "flex h-16 items-center justify-between border-purple-600 p-2 dark:border-slate-600"
