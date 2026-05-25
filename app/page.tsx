@@ -126,7 +126,7 @@ export default function Home() {
 
                 <Separator classNames={"mb-8"} />
 
-                <div className={"my-2 flex w-full flex-col items-center"}>
+                <div className={"flex w-full flex-col items-center"}>
                     <div className={"text-center"}>
                         <h1
                             className={
