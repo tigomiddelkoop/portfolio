@@ -1,6 +1,5 @@
 "use client"
 
-import Pill from "./Pill"
 import styles from "./footer.module.scss"
 import React, { useEffect, useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -12,13 +11,6 @@ import {
 import Separator from "@/app/components/Separator"
 
 export default function Footer(): React.JSX.Element {
-    // This might not be the best option, I want to look for a better option.
-    const [buildId, setBuildId] = useState("Production")
-    // useEffect(() => {
-    //     if (buildId == "") {
-    //         fetch("/api/buildid").then(response => response.json().then(data => setBuildId(data.buildId)))
-    //     }
-    // }, [buildId])
 
     const footerLink = styles.link + " dark:hover:bg-pink-700 items-center"
     const footerLinkActive =
@@ -46,24 +38,6 @@ export default function Footer(): React.JSX.Element {
                         "flex flex-col justify-center text-center lg:flex-row"
                     }
                 >
-                    <div className={styles.categoryContainer}>
-                        <p className={styles.categoryTitle}>
-                            My other projects
-                        </p>
-                        <a className={""} href={"https://tigo.tech"}>
-                            tigo.tech
-                        </a>
-                        <a
-                            className={""}
-                            href={"https://genericdevelopment.nl"}
-                        >
-                            GenericDevelopment
-                        </a>
-                        <a className={""} href={"https://systemmanager.io"}>
-                            SystemManager Core
-                        </a>
-                    </div>
-
                     <div className={styles.categoryContainer}>
                         <div>
                             <p className={styles.categoryTitle}>Find me here</p>
@@ -99,20 +73,6 @@ export default function Footer(): React.JSX.Element {
                         </div>
                     </div>
 
-                    <div className={styles.categoryContainer}>
-                        {/*<div className={"mb-2"}>*/}
-                        {/*    <p className={styles.categoryTitle + ""}>Kubernetes info</p>*/}
-                        {/*</div>*/}
-                        <div>
-                            <p className={styles.categoryTitle}>
-                                Site Build Info
-                            </p>
-                            <div className={"flex items-center justify-center"}>
-                                <p className={"mr-1"}>Build ID:</p>
-                                <Pill className={""}>{buildId}</Pill>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <p className={"text-xs"}>
                     All the pictures on this site are made by Tigo and are of

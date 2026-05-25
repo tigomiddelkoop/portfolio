@@ -62,39 +62,39 @@ export default function Navbar(props: {
 
                     <div
                         className={
-                            "col-span-2 flex items-center justify-center "
+                            "col-span-2 flex items-center justify-center"
                         }
                     >
-                        <div
-                            className={
-                                "text-md xl:overflow-none scroll-hidden flex space-x-2 overflow-auto rounded-full border border-purple-600 bg-black/[0.2] px-6 py-2 shadow-lg dark:border-slate-600 xl:space-x-6 xl:px-8"
-                            }
-                        >
-                            <Link
-                                href={"/"}
-                                className={
-                                    "hover:text-purple-600 dark:hover:text-slate-600"
-                                }
-                            >
-                                Experiences
-                            </Link>
-                            <Link
-                                href={"/"}
-                                className={
-                                    "hover:text-purple-600 dark:hover:text-slate-600"
-                                }
-                            >
-                                Projects
-                            </Link>
-                            <Link
-                                href={"/"}
-                                className={
-                                    "hover:text-purple-600 dark:hover:text-slate-600"
-                                }
-                            >
-                                Socials
-                            </Link>
-                        </div>
+                        {/*<div*/}
+                        {/*    className={*/}
+                        {/*        "text-md xl:overflow-none scroll-hidden flex space-x-2 overflow-auto rounded-full border border-purple-600 bg-black/[0.2] px-6 py-2 shadow-lg dark:border-slate-600 xl:space-x-6 xl:px-8"*/}
+                        {/*    }*/}
+                        {/*>*/}
+                        {/*    <Link*/}
+                        {/*        href={"/"}*/}
+                        {/*        className={*/}
+                        {/*            "hover:text-purple-600 dark:hover:text-slate-600"*/}
+                        {/*        }*/}
+                        {/*    >*/}
+                        {/*        Experiences*/}
+                        {/*    </Link>*/}
+                        {/*    <Link*/}
+                        {/*        href={"/"}*/}
+                        {/*        className={*/}
+                        {/*            "hover:text-purple-600 dark:hover:text-slate-600"*/}
+                        {/*        }*/}
+                        {/*    >*/}
+                        {/*        Projects*/}
+                        {/*    </Link>*/}
+                        {/*    <Link*/}
+                        {/*        href={"/"}*/}
+                        {/*        className={*/}
+                        {/*            "hover:text-purple-600 dark:hover:text-slate-600"*/}
+                        {/*        }*/}
+                        {/*    >*/}
+                        {/*        Socials*/}
+                        {/*    </Link>*/}
+                        {/*</div>*/}
                     </div>
 
                     <div className={"flex justify-end space-x-2"}>
