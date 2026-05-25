@@ -124,7 +124,7 @@ export default function Home() {
                     <FontAwesomeIcon height={16} icon={faAnglesDown} />
                 </div>
 
-                <Separator classNames={"mb-2"} />
+                <Separator classNames={"mb-8"} />
 
                 <div className={"my-2 flex w-full flex-col items-center"}>
                     <div className={"text-center"}>
@@ -135,18 +135,11 @@ export default function Home() {
                         >
                             About me
                         </h1>
-                        <h5
-                            className={
-                                "text-xl font-bold text-purple-300 dark:text-slate-300"
-                            }
-                        >
-                            WHO AM I?!?!?!?!?!
-                        </h5>
                     </div>
-                    <p className={"font-normal"}>
+                    <p className={"font-normal mt-2"}>
                         Hi! I'm, as you have probably seen up top, Tigo. I
                         specialise in building Clouds using mostly Kubernetes. I
-                        also love doing stuff with baremetal servers
+                        also love doing stuff with bare metal servers.
                     </p>
                     {/*
             Talk about yourself a bit more, what you do, your hobbies and your current work. Might also be intresting to show of your home setup using TALOS,
@@ -154,7 +147,7 @@ export default function Home() {
             */}
                 </div>
 
-                <Separator classNames={"w-1/2 my-2"} />
+                <Separator classNames={"w-1/2 my-8"} />
 
                 <div className={"my-2 flex w-full flex-col items-center"}>
                     <div className={"text-center"}>
