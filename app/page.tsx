@@ -43,10 +43,10 @@ export default function Home() {
                         "mb-4 flex h-screen flex-col items-center justify-center px-4 py-6 dark:border-gray-600 xl:px-12 xl:py-10"
                     }
                 >
-                    <div className="mb-3 flex flex-row items-center justify-center">
+                    <div className="mb-3 flex flex-col items-center justify-center xl:flex-row">
                         <Image
                             className={
-                                "mr-4 h-24 w-24 rounded-full border-2 border-purple-900 shadow-lg dark:border-slate-900 xl:h-32 xl:w-32"
+                                "h-24 w-24 rounded-full border-2 border-purple-900 shadow-lg dark:border-slate-900 xl:mr-4 xl:h-32 xl:w-32"
                             }
                             alt="Tigo"
                             src={"/img/pf_new.jpg"}
@@ -150,7 +150,7 @@ export default function Home() {
                             About me
                         </h1>
                     </div>
-                    <p className={"mt-2 font-normal"}>
+                    <p className={"mt-2 px-4 py-6 font-normal"}>
                         Hi! I'm, as you have probably seen up top, Tigo. I
                         specialise in building Clouds using mostly Kubernetes. I
                         also love doing stuff with bare metal servers.
